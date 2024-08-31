@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="showModel()">Click</button>
+
+    <div id="modal1" class="modal-wrapper">
+        <div class="modal">
+            <h1>This is Heading <button onclick="closeModel()">Close</button> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate eligendi cupiditate delectus ullam quae, nisi voluptatum provident. Iusto nihil vitae fuga ipsam inventore recusandae dicta obcaecati et, fugiat eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi placeat illum quod! Iste soluta quidem, asperiores accusantium sint illum, pariatur autem cum cupiditate nihil ullam, amet cumque rem eius.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showModel() {
+            document.getElementById("modal1").style.display = "block";
+        }
+
+        function closeModel() {
+            document.getElementById("modal1").style.display = "none";
+        }
+    </script>
+</body>
+</html>
